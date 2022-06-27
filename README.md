@@ -13,4 +13,4 @@ A simple application to display a list of retrieved items from the Internet. The
 **Spent time: 3 hrs total**
 
 **Preview**
-![](https://gifyu.com/image/SHXls)
+![](preview.gif)
