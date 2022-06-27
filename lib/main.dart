@@ -1,18 +1,23 @@
+import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:uran_company_test_task/ui/pages/exhibits_feed/exhibits_feed.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  BlocOverrides.runZoned(
+    () => runApp(const ExhibitionApp()),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+class ExhibitionApp extends StatelessWidget {
+  const ExhibitionApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Exhibition',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: Container(),
+      home: const ExhibitsFeed(),
     );
   }
 }
