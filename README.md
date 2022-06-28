@@ -12,6 +12,10 @@ A simple application to display a list of retrieved items from the Internet. The
 
 **Spent time: 3 hrs total**
 
-**Preview**
+**Preview (success loading)**
 
-![](preview.gif)
+![](successful.gif)
+
+**Preview (failed loading)**
+
+![](failure.gif)
