@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:uran_company_test_task/bloc/exhibits_feed_bloc.dart';
-import 'package:uran_company_test_task/bloc/exhibits_feed_event.dart';
-import 'package:uran_company_test_task/bloc/exhibits_feed_state.dart';
+import 'package:uran_company_test_task/bloc/exhibit_feed/exhibits_feed_bloc.dart';
+import 'package:uran_company_test_task/bloc/exhibit_feed/exhibits_feed_event.dart';
+import 'package:uran_company_test_task/bloc/exhibit_feed/exhibits_feed_state.dart';
 
 import 'exhibits_feed_state_builder.dart';
 

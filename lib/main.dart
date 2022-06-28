@@ -1,5 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:uran_company_test_task/ui/pages/exhibit_details/exhibit_details.dart';
 import 'package:uran_company_test_task/ui/pages/exhibits_feed/exhibits_feed.dart';
 
 void main() {
@@ -16,8 +17,11 @@ class ExhibitionApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Exhibition',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const ExhibitsFeed(),
+      theme: ThemeData(primaryColor: Colors.white),
+      routes: {
+        '/': (_) => const ExhibitsFeed(),
+        ExhibitDetails.routeName: (_) => const ExhibitDetails(),
+      },
     );
   }
 }

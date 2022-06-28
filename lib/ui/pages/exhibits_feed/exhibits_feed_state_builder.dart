@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:uran_company_test_task/bloc/exhibits_feed_state.dart';
+import 'package:uran_company_test_task/bloc/exhibit_feed/exhibits_feed_state.dart';
 import 'package:uran_company_test_task/ui/widgets/failure_widget.dart';
 
 import 'exhibits_feed_success.dart';

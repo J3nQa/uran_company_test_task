@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uran_company_test_task/models/exhibit.dart';
+import 'package:uran_company_test_task/ui/pages/exhibit_details/exhibit_details.dart';
+import 'package:uran_company_test_task/ui/pages/exhibit_details/exhibit_details_nav_args.dart';
 import 'package:uran_company_test_task/ui/widgets/exhibit_feed_item.dart';
 
 class ExhibitsFeedSuccess extends StatelessWidget {
@@ -17,7 +19,16 @@ class ExhibitsFeedSuccess extends StatelessWidget {
     );
   }
 
-  ExhibitFeedItem _getItem(BuildContext context, int index) {
-    return ExhibitFeedItem(items[index]);
+  Widget _getItem(BuildContext context, int index) {
+    var model = items[index];
+    return GestureDetector(
+      onTap: () {
+        Navigator.of(context).pushNamed(
+          ExhibitDetails.routeName,
+          arguments: ExhibitDetailsNavigationArgs(model),
+        );
+      },
+      child: ExhibitFeedItem(model),
+    );
   }
 }

@@ -10,6 +10,7 @@ class ExhibitFeedItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var imageUrl = model.images.first;
     return ClipRRect(
       child: Container(
         margin: const EdgeInsets.all(8),
@@ -20,7 +21,7 @@ class ExhibitFeedItem extends StatelessWidget {
               Positioned.fill(
                 child: Image.network(
                   fit: BoxFit.cover,
-                  model.images.first,
+                  imageUrl,
                   errorBuilder: (c, e, s) => const NoImageWidget(),
                 ),
               ),
